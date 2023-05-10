@@ -1,0 +1,152 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Taylor Swift</title>
+
+        <style>
+          h1 {text-align: center;}
+          
+          div {text-align: center;}
+          </style>
+
+         <h1>Taylor Swift Discography</h1>
+
+         <nav>
+          <a href="/album1/">Taylor Swift</a> |
+          <a href="/album2/">Fearless</a> |
+          <a href="/album3/">Speak Now</a> |
+          <a href="/album4/">Red</a> |
+          <a href="/album5/">1989</a> |
+          <a href="/album6/">Reputation</a> |
+          <a href="/album7/">Lover</a> |
+          <a href="/album8/">Folklore</a>
+          </nav>
+
+         <style>
+           img{
+             max-width: 100% ;
+           }
+         </style>
+
+      <body>
+        
+        <section>
+                <i><p>Below is a list of Taylors Swifts Discography in order of release date.</p></i>
+        </section>
+
+        <aside>
+                <img src= "https://i.pinimg.com/originals/67/4f/16/674f162053a391f32077ee55b094d5f7.jpg" >
+        </aside>
+        &nbsp;&nbsp;
+
+        <section>
+          <b>Taylor Swift:</b> &nbsp; <p> The first of eight albums, this album was released on October 24, 2006. </p>
+        </section>
+        &nbsp;&nbsp;
+
+        <section>
+          <b>Fearless:</b>&nbsp; <p>The second of eight albums, this album was released on November 11, 2008. </p>
+        </section>
+        &nbsp;&nbsp;
+
+        <section>
+          <b>Speak Now:</b> &nbsp; <p> The third of eight albums, this album was released on October 25, 2010. </p>
+        </section>
+        &nbsp;&nbsp;
+
+        <section>
+          <b>Red:</b> &nbsp; <p> The fourth of eight albums, this album was released on October 22, 2012. </p>
+        </section>
+        &nbsp;&nbsp;
+
+        <section>
+          <b>1989:</b> &nbsp; <p> The fifth of eight albums, this album was released on October 27, 2014. </p>
+        </section>
+        &nbsp;&nbsp;
+
+        <section>
+          <b>Reputation:</b> &nbsp; <p> The sixth of eight albums, this album was released on November 10, 2017. </p>
+        </section>
+        &nbsp;&nbsp;
+
+        <section>
+          <b>Lover:</b> &nbsp; <p> The seventh of eight albums, this album was released on August 23, 2019. </p>
+        </section>
+        &nbsp;&nbsp;
+
+        <section>
+          <b>Folklore:</b> &nbsp; <p> The last of the albums, this album was released on July 24, 2020. </p>
+        </section>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <p><i>CHOOSE YOUR FAVORITE ALBUM BELOW</i></p>
+        
+        <form action="/action_page.php" method="get">
+          
+          <input type="radio" id="album" name="fav_album" value="Taylor Swift">
+          <label for="html">Taylor Swift</label><br>
+          
+          <input type="radio" id="album" name="fav_album" value="Fearless" checked="checked">
+          <label for="css">Fearless</label><br>
+          
+          <input type="radio" id="album" name="fav_album" value="Speak Now">
+          <label for="javascript">Speak Now</label><br>
+
+          <input type="radio" id="album" name="fav_album" value="Red" checked="checked">
+          <label for="css">Red</label><br>
+
+          <input type="radio" id="album" name="fav_album" value="1989" checked="checked">
+          <label for="css">1989</label><br>
+
+          <input type="radio" id="album" name="fav_album" value="Reputation" checked="checked">
+          <label for="css">Reputation</label><br>
+
+          <input type="radio" id="album" name="fav_album" value="Lover" checked="checked">
+          <label for="css">Lover</label><br>
+
+          <input type="radio" id="album" name="fav_album" value="Folklore" checked="checked">
+          <label for="css">Folklore</label><br>
+          
+          <input type="submit" value="Submit">
+        </form>
+        
+        <footer>
+          <p>Author: Sav Beydoun<br>
+          <a href="mailto:sav@example.com">hege@example.com</a></p>
+        </footer>
+    </body>
+    </head>
+  </html>
